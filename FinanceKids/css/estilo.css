@@ -1,0 +1,268 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f0f9f4; /* Suave tono verde claro */
+    margin: 0;
+    padding: 15px;
+    background: url('img/fondo.jpg') no-repeat center center fixed;
+    background-size: cover; /* Escala la imagen para que cubra toda la pantalla */
+    color: #333; /* Color de texto adecuado para asegurar legibilidad */
+    text-align: center; /* Centra todo el texto en el cuerpo */
+}
+
+/* Encabezado */
+header {
+    padding: 20px;
+    background-color: #4caf50; /* Verde amigable y atractivo */
+    color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Navegación */
+nav {
+    display: flex;
+    justify-content: center; /* Centra la barra de navegación */
+    align-items: center;
+    margin: 20px 0;
+    background-color: #81c784; /* Verde suave */
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/* Contenedor de botones de semestre */
+.semester-buttons {
+    display: flex; /* Coloca los botones en una fila horizontal */
+    justify-content: center; /* Centra los botones horizontalmente */
+    gap: 10px; /* Espacio entre los botones */
+    margin: 20px 0; /* Margen superior e inferior */
+}
+
+/* Estilo de cada botón de semestre */
+.semester-button {
+    background-color: #66bb6a; /* Verde vibrante */
+    color: white;
+    padding: 12px 20px;
+    text-decoration: none;
+    border-radius: 25px;
+    border: none;
+    transition: background-color 0.3s, transform 0.2s;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.semester-button:hover {
+    background-color: #388e3c; /* Verde más oscuro en hover */
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Sección */
+section {
+    width: 70%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #a5d6a7; /* Fondo verde pastel */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+section:hover {
+    background-color: #81c784; /* Verde suave al pasar el mouse */
+    transform: scale(1.02);
+}
+
+/* Párrafos */
+p {
+    margin: 0 auto;
+    width: 80%;
+    text-align: center; /* Centra el texto de los párrafos */
+    color: #333;
+}
+
+/* Pie de página */
+footer {
+    margin-top: 20px;
+    font-size: 0.9em;
+    color: #666;
+    background-color: #c8e6c9; /* Verde pastel claro */
+    padding: 15px;
+    border-radius: 10px;
+}
+
+/* Imágenes y Embeds */
+embed, img {
+    border: 2px solid #4caf50; /* Verde borde */
+    border-radius: 10px;
+    max-width: 95%;
+}
+
+/* Lista del equipo */
+.team-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.team-list li {
+    display: flex;
+    align-items: center;
+    background-color: #e8f5e9; /* Verde claro para elementos */
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    justify-content: center;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.team-list li:hover {
+    background-color: #c8e6c9; /* Verde pastel vibrante en hover */
+    transform: scale(1.02);
+}
+
+.team-photo {
+    width: 100px;
+    height: 110px;
+    border-radius: 50%;
+    margin-right: 15px;
+    object-fit: cover;
+    border: 2px solid #66bb6a; /* Verde vibrante */
+}
+
+/* Dropdown */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    min-width: 160px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a {
+    color: #4caf50; /* Verde para enlaces */
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #4caf50;
+    color: white;
+}
+
+/* Animación de entrada */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+table{
+    width: 100%;
+    margin-bottom: 30px;
+}
+abbr{
+    cursor: help;
+}
+table, td, th{
+    border-style: solid;
+    border-width: 1px;
+}
+table caption{
+    font-size: 120%;
+    font-weight: bold;
+}
+caption{
+    color: black;
+}
+td, th{
+    border-color: rgb(33, 34, 33);
+}
+tr:hover{
+    color: #333;
+    background-color: #F2F2F2;
+}
+th{
+    background-color: rgb(12, 202, 28);   
+}
+td{
+    color: rgb(18, 19, 18);
+}
+ul{
+    font-style: italic;
+}
+#title-sect{
+    color: rgb(24, 26, 24);
+    text-align: center; 
+
+}
+.proj-desc{
+    text-align: right;
+}
+.login-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: center;
+    margin-top: 20px;
+}
+.login-button:hover {
+    background-color: #45a049;
+}
+button, .button-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+}
+
+button:hover, .button-link:hover {
+    background-color: #45a049;
+}
+
+.button-link {
+    text-decoration: none;
+}
+
+/* Agrega esto a css/estilo.css */
+.btn {
+    display: inline-block;
+    padding: 10px 24px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 16px;
+    border: none;
+    transition: background 0.3s;
+    cursor: pointer;
+    margin: 8px 0;
+}
+.btn:hover {
+    background-color: #388e3c;
+}
